@@ -14,11 +14,11 @@ class App extends Component {
       <div className="ui container">
         <Header />
         <Switch>
-          <Route path='/' exact render={() => <StreamList />} />
-          <Route path='/streams/new' exact render={() => <StreamCreate />} />
-          <Route path='/streams/edit' exact render={() => <StreamEdit />} />
-          <Route path='/streams/delete' exact render={() => <StreamDelete />} />
-          <Route path='/streams/show' exact render={() => <StreamShow />} />
+          <Route path='/' exact render={(props) => <StreamList {...props}/>} />
+          <Route path='/streams/new' exact render={(props) => <StreamCreate {...props}/>} />
+          <Route path='/streams/edit/:id' exact render={(props) => <StreamEdit {...props}/>} />
+          <Route path='/streams/delete' exact render={(props) => <StreamDelete {...props}/>} />
+          <Route path='/streams/show' exact render={(props) => <StreamShow {...props}/>} />
         </Switch>
       </div>
     );

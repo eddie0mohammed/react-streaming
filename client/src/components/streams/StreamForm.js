@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
-import {connect } from 'react-redux';
-import * as actionCreators from '../../actions/actionCreators';
 import {withRouter} from 'react-router-dom';
 
-class StreamCreate extends Component {
+class StreamForm extends Component {
 
 
     renderError = (meta) => {
@@ -16,12 +14,9 @@ class StreamCreate extends Component {
                 </div>
             )
         }
-        
     }
 
     renderInput = (formProps) => {
-        // console.log(formProps)
-        
         return (
             <div className={`field ${formProps.meta.error && formProps.meta.touched ? `error`: ``}`}>
                 <label>{formProps.label}</label>
@@ -32,14 +27,12 @@ class StreamCreate extends Component {
     } 
 
     onSubmit = (formValues) => {
-        this.props.createStream(formValues);
-        this.props.history.push('/');
+        this.props.onSubmit(formValues);
 
     }
 
 
     render() {
-        // console.log(this.props);
         return (
             <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
                 <Field name="title" component={this.renderInput} label="Enter title"/>
@@ -63,10 +56,5 @@ const validate = (formValues) => {
     return errors;
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        createStream: (formValues) => dispatch(actionCreators.createStream(formValues))
-    }
-}
 
-export default withRouter(connect(null, mapDispatchToProps)(reduxForm({form: 'streamCreate', validate })(StreamCreate)));
+export default withRouter(reduxForm({form: 'StreamForm', validate })(StreamForm));

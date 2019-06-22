@@ -1,0 +1,39 @@
+{
+  "streams": [
+    {
+      "title": "a",
+      "description": "a",
+      "id": 1
+    },
+    {
+      "title": "test1",
+      "description": "test1",
+      "userId": "111872307694719956362",
+      "id": 2
+    },
+    {
+      "title": "test2",
+      "description": "test2",
+      "userId": "111872307694719956362",
+      "id": 3
+    },
+    {
+      "title": "withRouter",
+      "description": "added withRouter",
+      "userId": "111872307694719956362",
+      "id": 4
+    },
+    {
+      "title": "testing with router",
+      "description": "testing with router from StreamCreate.js",
+      "userId": "111872307694719956362",
+      "id": 5
+    },
+    {
+      "title": "test",
+      "description": "test",
+      "userId": "111872307694719956362",
+      "id": 6
+    }
+  ]
+}
