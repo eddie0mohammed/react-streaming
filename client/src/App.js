@@ -17,8 +17,8 @@ class App extends Component {
           <Route path='/' exact render={(props) => <StreamList {...props}/>} />
           <Route path='/streams/new' exact render={(props) => <StreamCreate {...props}/>} />
           <Route path='/streams/edit/:id' exact render={(props) => <StreamEdit {...props}/>} />
-          <Route path='/streams/delete' exact render={(props) => <StreamDelete {...props}/>} />
-          <Route path='/streams/show' exact render={(props) => <StreamShow {...props}/>} />
+          <Route path='/streams/delete/:id' exact render={(props) => <StreamDelete {...props}/>} />
+          <Route path='/streams/:id' exact render={(props) => <StreamShow {...props}/>} />
         </Switch>
       </div>
     );

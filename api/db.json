@@ -11,12 +11,6 @@
       "id": 2
     },
     {
-      "title": "test2222220000",
-      "description": "test200000",
-      "userId": "111872307694719956362",
-      "id": 3
-    },
-    {
       "title": "withRouter",
       "description": "added withRouter",
       "userId": "111872307694719956362",
@@ -27,24 +21,6 @@
       "description": "testing with router from StreamCreate.js",
       "userId": "111872307694719956362",
       "id": 5
-    },
-    {
-      "title": "test",
-      "description": "test",
-      "userId": "111872307694719956362",
-      "id": 6
-    },
-    {
-      "title": "refactored",
-      "description": "refactored",
-      "userId": "111872307694719956362",
-      "id": 7
-    },
-    {
-      "title": "test10",
-      "description": "test10",
-      "userId": "111872307694719956362",
-      "id": 8
     }
   ]
 }
