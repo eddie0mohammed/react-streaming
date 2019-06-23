@@ -1,0 +1,10 @@
+configure obs
+
+custom server
+
+rtmp://localhost/live
+key: 1
+
+
+
+key => this id of the streamer
